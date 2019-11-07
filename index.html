@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Problem Set 8</title>
+    </head>
+    <body style="background-color:blanchedalmond;text-align:center">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <h1 style="font-weight: lighter">Problem Set 8</h1>
+        <br>
+        <br>
+        <img src="Dinosaur.gif" alt="well.." style="width:275px;height:275px" usemap="#workmap">
+        
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="dinosaur" href="dinosaur.html">
+        </map>
+        <br>
+        <h5>by <mark style="background-color:blue;color:white">Andrea Mendoza</mark></h5>
+        <br>
+        <br>
+
+        <audio controls>
+            <source src="Composition.wav" type="audio/wav">
+        </audio>
+
+        <br>
+        <br>
+        <a href="Cat.html"><button>Cat</button></a>
+        <br>
+        <br>
+        <p style="border:2px solid darkcyan"> For LMSC-261</p>
+        <br>
+        <p><a href="https://www.github.com/navreyort/LMSC-261-FA2019" target="_blank">Link to Github</a>
+        </p>
+        <br>
+        <select>
+            <option value="Test1">Test1</option>
+            <option value="Test2">Test2</option>
+        </select>
+        <br>
+        <br>
+
+        <button onclick="getLocation()">Location</button>
+
+        <p id="demo"></p>
+
+        <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>longitude: " + position.coords.longitude;
+        }
+
+        </script>
+
+        <div style="background-image: url('Image.jpg');color:white">
+        This is only a Test<br>
+        This is only a Test<br>
+        This is only a Test<br>
+        This is only a Test<br>
+        </div>
+        <hr>
+        <p style="color:blue">
+            This is a <ins>test</ins>.
+        </p>
+
+        <div class="intro">
+            <p>2019</p>
+        </div>
+        
+    </body>
+</html>
